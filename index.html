@@ -1,10 +1,131 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highway | Smart UK investment</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+    <link href="./css/style.css" rel="stylesheet">
+    <style>
+    .left {
+  position: relative;
+  float: left;
+  padding-left: 100px;
+  margin-top: 55px;
+  width: 50%;
+  height: 400px;
+  margin-bottom: 10px;
+}
 
-<head>
-</head>
+.right {
+  position: relative;
+  float: right;
+  margin-top: 50px;
+  padding-left: 200px;
+  width: 50%;
+  height: 400px;
+  margin-bottom: 10px;
+}
 
-<body>
-HELLO WORLD! I'm Calvinthio
-</body>
+.contactus {
+  background: rgba (0,0,0,0.3);
+  border: 10px solid #ffffff;
+  border-radius: 0;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+          $('#ios-notice').removeClass('hidden');
+          $('.parallax-container').height( $(window).height() * 0.7 | 0 );
+        } else {
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        }
+      });
+    </script>
+    <script src="./js/parallax.min.js"></script>
+  </head>
+  <body>
+    <section style="background-color:#283446">
+      <div class="container">
+        <div id="ios-notice" class="alert alert-info hidden"><a href="http://ckylee.github.io/highway-mobile"><p><strong>Notice:</strong> Hello mobile user. Unfortunately parallax effect is not enabled for mobile users. Please visit this page on a desktop browser to see its full effect or visit mobile-friedly website by clicking this blue box</p></a></div>
+      </div>
+      <h1 style="text-align:center; color:#3187D1">Highway</h1>
+      <h4 style="text-align:center; color:#E5DACE">The smart way to invest in United Kingdom</h4>
+    </section>
 
+       <div class="parallax-container" data-parallax="scroll" data-speed="0.5" data-bleed="30" data-image-src="./img/londonbridge.jpg" data-natural-width="1396" data-natural-height="825"></div>
+
+    <section style="background-color:#283446">
+      <div class="container">
+        <div class ="left">
+          <img src="./img/find.png">
+                  <h1 style="padding-left:75px; color:#3187D1">Find</h1>
+                  <h2 style="padding-left:50px; color:#E5DACE">Investors</h2>
+                  <h2 style="padding-left: 25px; color:#E5DACE">Power Teams</h2>
+        </div>
+
+        <div class="right">
+            <img src="./img/rate.png">
+        <h1 style="padding-left:50px; color:#3187D1">Evaluate</h1>
+        <h2 style="color:#E5DACE">Your Exeperience</h2>
+        <h2 style="color:#E5DACE">Your Performance</h2>
+        </div>
+        
+      </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-speed="0.5" data-bleed="30" data-z-index="20" data-image-src="./img/hk.jpg" data-natural-width="1400" data-natural-height="825"></div>
+
+
+   <section style="background-color:#283446">
+      <div class="container">
+        <div class ="left">
+          <img src="./img/investors.png" style="padding-left: 65px">
+                  <h1 style="padding-left:100px; color:#E25B4E">Investors,</h1> <br /> <br />
+                  <a class="contactus" href="#" style="margin-left: 95px">Browse</a>
+                  
+                  <h3 style="color:#E5DACE; padding-top: 10px">Growing database of power teams</h3>
+
+        </div>
+
+        <div class="right">
+            <img src="./img/powerteams.png" style="padding-left: 50px">
+        <h1 style="color:#3187D1; padding-left: 40px; padding-bottom: 20px">Power Teams,</h1> <br />
+        <a class="contactus" href="#" style="margin-left: 35px">Contact Us</a>
+        <h3 style="color:#E5DACE; padding-top: 15px">Connect with 100+ investors</h3>
+        </div>
+        
+      </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="20" data-speed="0.5" data-image-src="./img/contactus.jpg" data-natural-width="1396" data-z-index="20" data-natural-height="810"></div>
+
+    <footer>
+      <div class="container">
+      Icons by Luis Prado, Milky, Miranda Chu and anbileru adaleru<br />
+        Images by Alex Wong and Luis Llerenagit<br />
+        &copy; 2015 Highway<br />
+      </div>
+    </footer>
+
+  </body>
 </html>
